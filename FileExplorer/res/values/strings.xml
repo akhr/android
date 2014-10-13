@@ -4,5 +4,12 @@
     <string name="app_name">FileExplorer</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+        <!-- Certificate File Browser -->
+    <string name="no_files">No Files</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="directory_not_readable">Directory not readable</string>
+    <string name="no_file">No File</string>
+    <string name="sd_card_not_mounted">SD card not mounted</string>
+    <string name="not_readable">%1$s not readable</string>
 
 </resources>
