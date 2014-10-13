@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Recurring Alarm</string>
+    <string name="set_time_interval">Set Time Interval</string>
+    <string name="recurring_alarm">Recurring Alarm</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="stop_alarm_to_reset">Stop alarm to reset</string>
+
+</resources>

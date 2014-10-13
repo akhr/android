@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.thesaka.ralarm.view.CustomNumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginTop="75dp" />
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/recurring_alarm"
+        android:textSize="35sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/setTimeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/numberPicker"
+        android:layout_below="@id/titleTV"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/set_time_interval"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/btnContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberPicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="40"
+            android:background="@drawable/start_btn_backgrnd"
+            android:text="@string/start"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="40"
+            android:background="@drawable/stop_btn_backgrnd"
+            android:text="@string/stop"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+</RelativeLayout>
