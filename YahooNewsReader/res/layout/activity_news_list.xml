@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ak.yahoonewsreader.NewsListActivity" >
+
+    <Button
+        android:id="@+id/get_data_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Get Data"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@id/get_data_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:footerDividersEnabled="true"
+        android:smoothScrollbar="true"
+        android:visibility="visible" >
+    </ListView>
+
+</RelativeLayout>
