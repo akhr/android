@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="blue_row_highlight">#0060A8</color>
+<color name="strike_row_highlight">#888988</color>
+<color name="black">#000000</color>
+<color name="white">#ffffff</color>
+<color name="red">#eb0003</color>
+<color name="orange">#eb0003</color>
+<color name="green">#21c437</color>
+<color name="blue">#149dd3</color>
+<color name="light_blue">#9de2fd</color>
+<color name="divider">#d9d9d9</color>
+<color name="buttonPanel">#eeeeee</color>
+<color name="grey_bg">#303030</color>
+<color name="grey_display">#B3B3B3</color>
+</resources>

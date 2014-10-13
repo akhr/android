@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metal_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lapTimeDisplayTable"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dip"
+        android:background="@drawable/transparent_time_display"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="27" >
+
+            <TextView
+                android:id="@+id/hours"
+                style="@style/displayBigText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dip"
+                android:gravity="center"
+                android:text="@string/double_zero" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/hoursColon"
+                style="@style/displayMediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/colon" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/mins"
+                style="@style/displayBigText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@string/double_zero" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/minsColon"
+                style="@style/displayMediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/colon" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/secs"
+                style="@style/displayBigText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@string/double_zero" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/secsColon"
+                style="@style/displayMediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/colon" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="23"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/tenth"
+                style="@style/displayBigText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:gravity="center"
+                android:text="@string/double_zero" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lapTimeDisplayTable"
+        android:layout_margin="10dip"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/startStopBtn"
+            android:layout_width="0dip"
+            android:layout_height="70dip"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_button"
+            android:clickable="true"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/pauseResumeBtn"
+            android:layout_width="0dip"
+            android:layout_height="70dip"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_button"
+            android:clickable="true"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonBar"
+        android:orientation="vertical" >
+
+        <!--
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="#000000"
+            android:divider="#E4E4E4"
+            android:dividerHeight="0.5dp"
+            android:footerDividersEnabled="true"
+            android:smoothScrollbar="true"
+            android:text="@string/hello"
+            android:visibility="visible" >
+        </ListView>
+        -->
+
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@android:color/transparent"
+            android:visibility="visible">
+        </ExpandableListView>
+    </LinearLayout>
+
+</RelativeLayout>

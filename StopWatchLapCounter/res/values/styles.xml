@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="displayBigText">
+        <item name="android:textSize">65sp</item>
+        <item name="android:textColor">@color/grey_display</item>
+    </style>
+
+    <style name="displayBigTextLands">
+        <item name="android:textSize">115sp</item>
+        <item name="android:textColor">@color/grey_display</item>
+    </style>
+
+    <style name="displayMediumText" parent="@style/displayBigText">
+        <item name="android:textSize">50sp</item>
+    </style>
+    
+        <style name="displayMediumTextLands" parent="@style/displayBigText">
+        <item name="android:textSize">90sp</item>
+    </style>
+
+</resources>

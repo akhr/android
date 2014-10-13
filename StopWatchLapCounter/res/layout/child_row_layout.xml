@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/lapValuesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="@color/divider"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/lapTimeValue"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lapStartTimeValue"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lapStopTimeValue"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lapCommentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lapValuesContainer"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/lapCommentHeader"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="Comment"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/lapCommentValue"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="Here is Comment"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_container"
+    android:layout_width="fill_parent"
+    android:layout_height="50sp"
+    android:background="@drawable/transparent_time_display"
+    android:orientation="vertical" >
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/groupHeaderValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:text="@string/sampleGrpHeader"
+        android:textColor="@color/grey_display"
+        android:textSize="30sp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/lapHeaderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupHeaderValue"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/lapTimeHeader"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/lapTimeHeader"
+            android:textColor="@color/grey_display"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lapStartTimeHeader"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/lapStartTimeHeader"
+            android:textColor="@color/grey_display"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lapStopTimeHeader"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/lapStopTimeHeader"
+            android:textColor="@color/grey_display"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

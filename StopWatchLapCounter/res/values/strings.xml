@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="hello">Hello World, LapMeterActivity!</string>
+    <string name="app_name">StopWatchLapCounter</string>
+    <string name="initial_time_string">00:00:00:000</string>
+    <string name="double_zero">00</string>
+    <string name="colon">:</string>
+    <string name="lapStartTimeHeader">Start</string>
+    <string name="lapTimeHeader">Lap</string>
+    <string name="lapStopTimeHeader">Stop</string>
+    <string name="sampleGrpHeader">Group Header</string>
+
+</resources>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:paddingBottom="5dip"
+    android:paddingLeft="10dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingTop="5dip"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/LapTimeHeader"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Lap Time"
+            android:textColor="#EEEEEE" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/LapTimeValue"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:text="Lap Time Value"
+            android:textColor="#EEEEEE" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/LapStartHeader"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Start Time"
+            android:textColor="#EEEEEE" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/LapStartValue"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:text="Start Time Value"
+            android:textColor="#EEEEEE" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/LapStopHeader"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Stop Time"
+            android:textColor="#EEEEEE" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/LapStopValue"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:text="Stop Time Value"
+            android:textColor="#EEEEEE" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/CommentHeader"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Comment"
+            android:textColor="#EEEEEE" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/CommentValue"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:text="Comment Value"
+            android:textColor="#EEEEEE" >
+        </EditText>
+    </LinearLayout>
+    <!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100" >
+
+                <TextView
+                    android:id="@+id/LapTimeHeader"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text="Lap Time" 
+                    android:textColor="#EEEEEE">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/LapTimeValue"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:text="Lap Time Value" 
+                    android:textColor="#EEEEEE">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100" >
+
+                <TextView
+                    android:id="@+id/LapStartHeader"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text="Start Time"
+                    android:textColor="#EEEEEE" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/LapStartValue"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:text="Start Time Value"
+                    android:textColor="#EEEEEE" >
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100" >
+
+                <TextView
+                    android:id="@+id/LapStopHeader"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text="Stop Time"
+                    android:textColor="#EEEEEE" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/LapTimeValue"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:text="Stop Time Value"
+                    android:textColor="#EEEEEE" >
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100" >
+
+                <TextView
+                    android:id="@+id/CommentHeader"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text="Comment"
+                    android:textColor="#EEEEEE" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/CommentValue"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:text="Comment Value"
+                    android:textColor="#EEEEEE" >
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    
+    -->
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Save"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Delete"
+            android:textColor="#000000" />
+    </LinearLayout> -->
+    
+
+</LinearLayout>
