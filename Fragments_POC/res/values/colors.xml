@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="weblogon_url_bar_bg">#FFFFFF</color>
+    <color name="weblogon_url_bar_untrusted_bg">#86262C</color>
+    <color name="weblogon_url_bar_separator_secure">#84828C</color>
+    <color name="weblogon_url_bar_separator_insecure">#E7D4D5</color>
+
+    <color name="ssl_text_label">#ffffffff</color>
+    <color name="ssl_text_value">#ffffffff</color>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0099FF</color>
+    <color name="dark_blue">#334C5C</color>
+    <color name="light_blue">#FF32B6E6</color>
+    <color name="list_view_gray">#FFD3D3D3</color>
+    <color name="list_item_selection">#FFE6E6E6</color>
+    <color name="light_gray">#CCCCCC</color>
+    <color name="med_gray_1">#999999</color>
+    <color name="med_gray_2">#AAAAAA</color>
+    <color name="dark_gray">#666666</color>
+    <color name="darkest_gray">#333333</color>
+    <color name="text_dark_gray">#525252</color>
+    <color name="text_shadow">#a0a0a0</color>
+    <color name="madm_agent_background">#FFF7F7F7</color>
+    <color name="app_catalog_background">#FFE5E5E5</color>
+    <color name="pin_screen_background">#FFEBEBEB</color>
+    <color name="product_name_shadow">#5A5A5A</color>
+    <color name="product_tagline_text">#292929</color>
+    <color name="product_tagline_shadow">#909090</color>
+    <color name="product_desc_text">#666666</color>
+    <color name="numeric_keypad_bckgrnd">#BDBFC5</color>
+    <color name="my_device_title_background">#317DCB</color>
+    <color name="my_device_blue">#1CBDED</color>
+    <color name="my_device_blue_shadow">#55CEF1</color>
+    <color name="my_device_red">#E12B0B</color>
+    <color name="my_device_green">#39B54A</color>
+    <color name="my_device_hint">#B4B4B4</color>
+</resources>

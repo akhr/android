@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    tools:context="com.thesaka.fragments_poc.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <FrameLayout
+        android:id="@+id/menu_pane_frag_placeholder"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="40">
+    </FrameLayout>
+
+     <FrameLayout
+        android:id="@+id/details_pane_frag_placeholder"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60" >
+    </FrameLayout>
+
+</LinearLayout>

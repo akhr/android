@@ -4,6 +4,10 @@
     <string name="app_name">Fragments_POC</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="action_example">ActionExample</string>
+
     <string-array name="sample_list_items">
         <item>Item 1</item>
         <item>Item 2</item>
@@ -18,5 +22,7 @@
         <item>Item 11</item>
         <item>Item 12</item>
     </string-array>
+    
+    <string name="dummyText">Lorem ipsum dolor sit amet, no eum alienum accusamus honestatis, minimum omittam salutandi in duo. Cu mea mazim partem aliquam, te ius nibh novum. Mea quot deserunt explicari te. Eu suas mollis eum. Mel mazim minimum an. Possit facete forensibus vim ut, nihil virtute partiendo sea in.</string>
 
 </resources>

@@ -1,38 +1,34 @@
 package com.thesaka.fragments_poc;
 
-import com.thesaka.fragments_poc.ui.fragments.DetailsFragment;
-import com.thesaka.fragments_poc.ui.fragments.ListFragment;
-import com.thesaka.fragments_poc.utility.Logger;
-
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
+
+import com.thesaka.fragments_poc.ui.fragments.DetailsPaneFragment;
+import com.thesaka.fragments_poc.ui.fragments.MenuFragment.MenuItemsEnum;
+import com.thesaka.fragments_poc.utility.Logger;
 
 /**
  * @author Akhash Ramamurthy (Thesaka) 
  * Oct 14, 2014
- * DetailsFragment.java
+ * DetailsPaneFragment.java
  */
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends BaseNavActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Logger.debug(MainActivity.class, "onCreate()");
-		setContentView(R.layout.activity_main);
-		createAndAddFragments();
-		if (savedInstanceState == null) {
-
-		}
+	}
+	
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+//		addRightPaneFragment(getCurrentSelection());
 	}
 
 	@Override
@@ -59,41 +55,59 @@ public class MainActivity extends ActionBarActivity {
 		super.onStart();
 		Logger.debug(MainActivity.class, "onStart()");
 	}
-	
+
 	@Override
 	protected void onResume() {
 		super.onResume();
 		Logger.debug(MainActivity.class, "onResume()");
-//		createAndAddFragments();
+		//		createAndAddFragments();
 	}
-	
+
 	@Override
 	protected void onPause() {
 		super.onPause();
 		Logger.debug(MainActivity.class, "onPause()");
 	}
-	
+
 	@Override
 	protected void onStop() {
 		super.onStop();
 		Logger.debug(MainActivity.class, "onStop()");
 	}
-	
+
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 		Logger.debug(MainActivity.class, "onDestroy()");
 	}
 	
-	private void createAndAddFragments(){
-		
-		Logger.debug(MainActivity.class, "createAndAddFragments()");
-		
-		ListFragment listFragment = new ListFragment();
-		DetailsFragment detailsFragment = new DetailsFragment();
+	@Override
+	protected Fragment getRightPaneFragment(MenuItemsEnum menu){
+		Logger.debug(this.getClass(), "getFragment()");
+		switch (menu) {
+		case Item_1:
+			break;
+		case Item_2:
+			break;
+		case Item_3:
+			break;
+		case Item_4:
+			break;
+		default:
+			break;
+		}
+		return DetailsPaneFragment.newInstance(menu);
+	}
+
+	private void addRightPaneFragment(MenuItemsEnum menu){
+
+		Logger.debug(MainActivity.class, "addDetailsFragment()");
+
 		FragmentTransaction tranc = getSupportFragmentManager().beginTransaction();
-		tranc.add(R.id.list_frag_placeHolder, listFragment);
-		tranc.add(R.id.details_frag_placeHolder, detailsFragment);
+		
+		if(findViewById(R.id.details_pane_frag_placeholder) != null){
+			tranc.add(R.id.details_pane_frag_placeholder, getRightPaneFragment(menu));
+		}
 		tranc.commit();
 	}
 }
