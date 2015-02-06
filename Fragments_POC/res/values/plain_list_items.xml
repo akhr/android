@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="plain_list_items">
+        <item>@string/list_item_a</item>
+        <item>@string/list_item_b</item>
+        <item>@string/list_item_c</item>
+        <item>@string/list_item_d</item>
+        <item>@string/list_item_e</item>
+        <item>@string/list_item_f</item>
+        <item>@string/list_item_g</item>
+        <item>@string/list_item_h</item>
+        <item>@string/list_item_i</item>
+        <item>@string/list_item_j</item>
+        <item>@string/list_item_k</item>
+        <item>@string/list_item_l</item>
+        <item>@string/list_item_m</item>
+        <item>@string/list_item_n</item>
+        <item>@string/list_item_o</item>
+        <item>@string/list_item_p</item>
+    </array>
+
+</resources>

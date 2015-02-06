@@ -7,6 +7,7 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="action_example">ActionExample</string>
+    <string name="action_delete">Delete</string>
 
     <string-array name="sample_list_items">
         <item>Item 1</item>
@@ -24,5 +25,21 @@
     </string-array>
     
     <string name="dummyText">Lorem ipsum dolor sit amet, no eum alienum accusamus honestatis, minimum omittam salutandi in duo. Cu mea mazim partem aliquam, te ius nibh novum. Mea quot deserunt explicari te. Eu suas mollis eum. Mel mazim minimum an. Possit facete forensibus vim ut, nihil virtute partiendo sea in.</string>
-
+	<string name="list_item_a">List Item 0</string>
+	<string name="list_item_b">List Item 1</string>
+	<string name="list_item_c">List Item 2</string>
+	<string name="list_item_d">List Item 3</string>
+	<string name="list_item_e">List Item 4</string>
+	<string name="list_item_f">List Item 5</string>
+	<string name="list_item_g">List Item 6</string>
+	<string name="list_item_h">List Item 7</string>
+	<string name="list_item_i">List Item 8</string>
+	<string name="list_item_j">List Item 9</string>
+	<string name="list_item_k">List Item 10</string>
+	<string name="list_item_l">List Item 11</string>
+	<string name="list_item_m">List Item 12</string>
+	<string name="list_item_n">List Item 13</string>
+	<string name="list_item_o">List Item 14</string>
+	<string name="list_item_p">List Item 15</string>
+    
 </resources>
