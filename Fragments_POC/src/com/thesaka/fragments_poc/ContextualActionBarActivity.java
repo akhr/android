@@ -3,34 +3,26 @@
  */
 package com.thesaka.fragments_poc;
 
-import com.thesaka.fragments_poc.utility.Logger;
-
-import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBarActivity;
+
+import com.thesaka.fragments_poc.ui.fragments.PlainListFragment;
+import com.thesaka.fragments_poc.utility.Logger;
 
 /**
  * @author Akhash Ramamurthy (Thesaka)
- * Nov 3, 2014
- * SecondActivity.java
  */
-public class SecondActivity extends Activity {
+public class ContextualActionBarActivity extends ActionBarActivity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Logger.debug(this.getClass(), "onCreate()");
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.second_activity);
-		getActionBar().show();
-		findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Logger.debug(this.getClass(), "Button.onClick()");
-				setResult(RESULT_OK);
-				finish();
-			}
-		});
+		setContentView(R.layout.contextual_action_bar_activity);
+		FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+		transaction.add(R.id.placeholder, new PlainListFragment(), null);
+		transaction.commit();
 	}
 	
 	@Override

@@ -20,7 +20,7 @@ public class Logger {
 	}
 	
 	public static void warn(Class className, String msg){
-		Log.d(TAG, className.getName()+" "+msg);
+		Log.w(TAG, className.getName()+" "+msg);
 	}
 
 	public static void error(String msg){
@@ -28,7 +28,7 @@ public class Logger {
 	}
 	
 	public static void error(Class className, String msg){
-		Log.d(TAG, className.getName()+" "+msg);
+		Log.e(TAG, className.getName()+" "+msg);
 	}
 	
 	public static void error(String msg, Throwable e){

@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.thesaka.fragments_poc.BaseNavActivity;
+import com.thesaka.fragments_poc.ContextualActionBarActivity;
 import com.thesaka.fragments_poc.R;
 import com.thesaka.fragments_poc.SecondActivity;
 import com.thesaka.fragments_poc.ui.fragments.MenuFragment.MenuItemsEnum;
@@ -90,6 +91,15 @@ public class DetailsPaneFragment extends Fragment {
 				Logger.debug(DetailsPaneFragment.class, "Dialog Button.onClick()");
 				MyDialogFragment dialog = new MyDialogFragment();
 				dialog.show(getFragmentManager(), "myDialog");
+			}
+		});
+		
+		getView().findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Logger.debug(DetailsPaneFragment.class, "CAB Button.onClick()");
+				startActivity(new Intent(getActivity(), ContextualActionBarActivity.class));
 			}
 		});
 		
