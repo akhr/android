@@ -130,7 +130,7 @@ public class MainActivity extends Activity {
 		mNumberPicker.setMaxValue(60);
 		mNumberPicker.setMinValue(1);
 		mNumberPicker.setWrapSelectorWheel(true);
-		mNumberPicker.setOnValueChangedListener(mOnValueChangeListener);
+//		mNumberPicker.setOnValueChangedListener(mOnValueChangeListener);
 	}
 
 	private void prepareRingtone(){

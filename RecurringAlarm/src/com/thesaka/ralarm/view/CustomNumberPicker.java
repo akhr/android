@@ -1,5 +1,6 @@
 package com.thesaka.ralarm.view;
 
+import net.simonvt.numberpicker.NumberPicker;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -7,7 +8,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.EditText;
 
-public class CustomNumberPicker extends android.widget.NumberPicker {
+public class CustomNumberPicker extends NumberPicker {
 
 	public CustomNumberPicker(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -21,7 +22,6 @@ public class CustomNumberPicker extends android.widget.NumberPicker {
 
 	@Override
 	public void addView(View child, int index, android.view.ViewGroup.LayoutParams params) {
-		params.height = (int) (params.height * 1.5);
 		super.addView(child, index, params);
 		updateView(child);
 	}
