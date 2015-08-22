@@ -1,8 +1,11 @@
 package com.ak.yahoonewsreader;
 
 import java.net.URL;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import android.app.Activity;
 import android.content.Context;
@@ -21,6 +24,7 @@ import com.ak.yahoonewsreader.data.image.ImageDownloadManager;
 
 public class NewsListActivity extends Activity {
 
+	private Map<String, String> dumpMap = new HashMap<>();
 
 	private List<NewsItem> mData;
 	private ListView mListView;
