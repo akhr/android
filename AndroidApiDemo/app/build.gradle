@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+apply plugin: "jacoco"
+
+repositories {
+    google()
+    mavenCentral() // use this for jacoco
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.android.apis"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'androidx.core:core:1.0.0'
+    compile 'androidx.legacy:legacy-support-v4:1.0.0'
+    compile 'androidx.legacy:legacy-support-core-utils:1.0.0'
+    compile 'androidx.legacy:legacy-support-core-ui:1.0.0'
+    compile 'androidx.appcompat:appcompat:1.0.0'
+    compile 'com.google.android.material:material:1.0.0'
+    compile 'com.google.android.gms:play-services-vision:8.4.0'
+}
